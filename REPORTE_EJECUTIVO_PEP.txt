@@ -1,0 +1,129 @@
+
+╔══════════════════════════════════════════════════════════════════════╗
+║        ANÁLISIS DE PERSONAS POLÍTICAMENTE EXPUESTAS (PEP)           ║
+║                    URUGUAY - DICIEMBRE 2025                          ║
+║                 Prevención de Lavado de Activos                      ║
+╚══════════════════════════════════════════════════════════════════════╝
+
+📊 DATOS GENERALES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+• Total de PEPs registrados: 857
+• Organismos distintos: 108
+• Cargos distintos: 179
+• Fuente: SENACLAFT - Catálogo de Datos Abiertos
+• Marco legal: Ley N° 19.574 (Prevención de Lavado de Activos)
+
+🎯 DISTRIBUCIÓN POR NIVEL DE RIESGO
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+• Alto - Ejecutivo/Legislativo             181 ( 21.1%)
+• Alto - Poder Judicial                    143 ( 16.7%)
+• Alto - Dirección General                  20 (  2.3%)
+• Medio-Alto - Diplomático/Policial         11 (  1.3%)
+• Medio - Dirección/Gerencia               229 ( 26.7%)
+• Medio - Representación Local             186 ( 21.7%)
+• Otros                                     87 ( 10.2%)
+
+  → TOTAL ALTO RIESGO: 355 (41.4%)
+  → TOTAL MEDIO RIESGO: 426 (49.7%)
+
+🏛️  DISTRIBUCIÓN POR TIPO DE ORGANISMO
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+• Poder Legislativo              244 ( 28.5%)
+• Ministerios                    172 ( 20.1%)
+• Poder Judicial                 158 ( 18.4%)
+• Otros Organismos                98 ( 11.4%)
+• Gobiernos Departamentales       87 ( 10.2%)
+• Instituciones Financieras       52 (  6.1%)
+• Empresas Públicas               35 (  4.1%)
+• Educación                       11 (  1.3%)
+
+👥 PERFIL ETARIO (Estimado por CI)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+• Menor 35 años        185 ( 21.6%)
+• 35-50 años           412 ( 48.1%)
+• Mayor 50 años        260 ( 30.3%)
+
+🚨 CASOS CRÍTICOS: Alto Riesgo en Instituciones Financieras
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+• Total identificados: 4
+• Requieren debida diligencia REFORZADA según Art. 8 Ley 19.574
+
+Distribución por institución:
+  • BROU (BROU): 1 PEP(s)
+      - SECRETARIO GENERAL
+  • BSE (BSE): 2 PEP(s)
+      - PRESIDENTE
+      - VICEPRESIDENTE
+  • BHU (BHU): 1 PEP(s)
+      - VICEPRESIDENTE
+
+📊 CONTEXTO: Instituciones Financieras (Todos los niveles)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+• Total de PEPs en sector financiero: 52 (6.1% del total)
+• Alto Riesgo: 4 (7.7% del sector)
+• Medio Riesgo: 48 (92.3% del sector)
+
+Distribución por institución:
+  • BPS (Previsión Social): 19 PEPs
+  • BSE (Seguros): 15 PEPs
+  • BROU (Banca Comercial): 11 PEPs
+  • BCU (Banca Central): 5 PEPs
+  • BHU (Hipotecario): 2 PEPs
+
+📋 RECOMENDACIONES PARA SUJETOS OBLIGADOS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+1. PRIORIZACIÓN DE RECURSOS
+   • Foco inmediato: 4 casos críticos (Alto Riesgo en finanzas)
+   • Monitoreo reforzado: 355 PEPs de Alto Riesgo total
+   • Seguimiento estándar: 426 PEPs de Medio Riesgo
+
+2. MONITOREO CONTINUO
+   • Actualización trimestral desde fuente oficial (catalogodatos.gub.uy)
+   • Verificación automática por CI en proceso de onboarding
+   • Cross-check con familiares directos (cónyuge, hijos, padres)
+   • Alertas por cambios de cargo o institución
+
+3. DEBIDA DILIGENCIA REFORZADA (Art. 8 Ley 19.574)
+   Para PEPs de Alto Riesgo:
+   • Aprobación de alta dirección para iniciar relación comercial
+   • Identificación del origen de fondos y patrimonio
+   • Monitoreo continuo de transacciones
+   • Revisión anual del perfil de riesgo
+
+   Especial atención a:
+   • 143 PEPs en Poder Judicial
+   • 181 PEPs Ejecutivo/Legislativo
+   • 4 PEPs de Alto Riesgo DENTRO de instituciones financieras
+
+4. GESTIÓN DOCUMENTAL
+   • Mantener expediente actualizado de cada PEP
+   • Justificar por escrito decisiones sobre relaciones de alto riesgo
+   • Registrar transacciones inusuales en sistema de alertas
+   • Reporte mensual a Oficial de Cumplimiento
+   • Archivo de evidencia para inspecciones SENACLAFT
+
+5. CAPACITACIÓN DEL PERSONAL
+   • Entrenamiento anual en identificación de PEPs
+   • Actualización sobre cambios en lista oficial
+   • Casos prácticos de señales de alerta
+   • Procedimientos de escalamiento
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📁 ARCHIVOS GENERADOS:
+   • Dataset completo enriquecido con categorías de análisis
+   • Lista de 4 casos críticos para seguimiento inmediato
+   • Registro de 48 PEPs de medio riesgo en finanzas
+   • Tablas resumen para integración con sistemas KYC/AML
+
+💡 VALOR DEL ANÁLISIS:
+   Este estudio permite a las instituciones financieras cumplir eficientemente
+   con la normativa de prevención de lavado de activos, priorizando recursos
+   en los casos de mayor exposición y automatizando la verificación de PEPs.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Analista: Federico Ramos
+Formación: Analista de Datos Jr. - Fundación Telefónica/UCU (300hs)
+Fecha: 04 de December de 2025
+Herramientas: Python 3.x, Pandas, Google Colab
+Fuente datos: SENACLAFT - https://catalogodatos.gub.uy/
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
