@@ -1,4 +1,4 @@
-# 🇺🇾 Análisis de Personas Políticamente Expuestas (PEP) - Uruguay
+# Análisis de Personas Políticamente Expuestas (PEP) - Uruguay
 
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
 ![Pandas](https://img.shields.io/badge/Pandas-2.0%2B-green)
