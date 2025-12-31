@@ -3,7 +3,7 @@
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
 ![Pandas](https://img.shields.io/badge/Pandas-2.0%2B-green)
 ![License](https://img.shields.io/badge/License-MIT-yellow)
-![Status](https://img.shields.io/badge/Status-Completed-success)
+![Status](https://img.shields.io/badge/Status-Refactored-success)
 
 **Análisis exploratorio de datos para prevención de lavado de activos según Ley N° 19.574**
 
@@ -21,17 +21,12 @@ Exploratory analysis of Uruguay’s official list of Politically Exposed Persons
 - [Metodología](#-metodología)
 - [Hallazgos Principales](#-hallazgos-principales)
 - [Casos Críticos Identificados](#-casos-críticos-identificados)
-- [Distribución por Tipo de Organismo](#distribución-por-tipo-de-organismo)
-- [Perfil Etario (Estimado)](#perfil-etario-estimado)
-- [Estructura del Proyecto](#estructura-del-proyecto)
+- [Estructura del Proyecto](#-estructura-del-proyecto)
 - [Cómo Usar Este Proyecto](#-cómo-usar-este-proyecto)
 - [Resultados y Archivos Generados](#-resultados-y-archivos-generados)
 - [Aplicaciones Prácticas](#-aplicaciones-prácticas)
-- [Sobre el Autor](#-sobre-el-autor)
 - [Próximos Pasos](#-próximos-pasos)
 - [Licencia](#-licencia)
-- [Agradecimientos](#-agradecimientos)
-- [Estadísticas del Proyecto](#-estadísticas-del-proyecto)
 
 ---
 
@@ -41,27 +36,22 @@ Este proyecto analiza la **lista oficial de Personas Políticamente Expuestas (P
 
 El objetivo es categorizar y priorizar los 857 PEPs registrados según su nivel de riesgo, facilitando el cumplimiento normativo de instituciones financieras y otros sujetos obligados por la **Ley N° 19.574**.
 
-### ¿Qué es una Persona Políticamente Expuesta?
-
-Las PEPs son personas que desempeñan o han desempeñado en los últimos años funciones públicas de importancia en el país o en el extranjero, como altos cargos del Poder Ejecutivo, Legislativo, Judicial, fuerzas armadas, empresas estatales u otras entidades públicas, lo que las vuelve de mayor riesgo potencial en materia de corrupción o lavado de activos.
-
 ---
 
 ## 🎓 Contexto y Objetivos
 
 ### Contexto Legal
 
-- **Marco normativo**: Ley N° 19.574 y decreto reglamentario N° 379/018.  
-- **Fuente de datos**: Recurso “Lista actualizada de PEP” del Catálogo de Datos Abiertos del Gobierno de Uruguay.  
-- **Actualización**: Datos a diciembre de 2025.  
+- **Marco normativo**: Ley N° 19.574 y decreto reglamentario N° 379/018.
+- **Fuente de datos**: Recurso “Lista actualizada de PEP” del Catálogo de Datos Abiertos del Gobierno de Uruguay.
 - **Privacidad**: Listado público oficial, sin datos sensibles adicionales.
 
 ### Objetivos del Análisis
 
-1. **Categorizar** a los 857 PEPs por nivel de riesgo.  
-2. **Identificar** casos críticos que requieren debida diligencia reforzada.  
-3. **Clasificar** organismos por tipo.  
-4. **Estimar** perfil etario.  
+1. **Categorizar** a los 857 PEPs por nivel de riesgo.
+2. **Identificar** casos críticos que requieren debida diligencia reforzada.
+3. **Clasificar** organismos por tipo.
+4. **Estimar** perfil etario.
 5. **Generar** reportes ejecutivos y archivos operativos.
 
 ---
@@ -73,44 +63,18 @@ Las PEPs son personas que desempeñan o han desempeñado en los últimos años f
 | **Python 3.8+** | Lenguaje principal |
 | **Pandas 2.0+** | Análisis de datos |
 | **NumPy** | Operaciones numéricas |
-| **Google Colab** | Entorno en la nube |
-| **Jupyter Notebook** | Desarrollo y documentación |
 
 ---
 
 ## 📊 Metodología
 
-El proyecto sigue **Los 6 Pasos del Analista de Datos**:
+El proyecto ha sido reestructurado para seguir un enfoque basado en scripts, mejorando la automatización y reproducibilidad:
 
-### 1️⃣ Setup y Carga de Datos
-- Importación de librerías  
-- Descarga del dataset (XLSX/CSV)  
-- Conversión a `lista-actualizada-de-pep.csv`
-
-### 2️⃣ Exploración Inicial
-- `head`, `info`, `describe`  
-- Identificación de columnas clave  
-- Ranking de organismos y cargos
-
-### 3️⃣ Limpieza y Verificación
-- Duplicados  
-- Verificación de CI únicas  
-- Manejo de nulos  
-- Corrección de formatos irregulares
-
-### 4️⃣ Análisis y Transformación
-- Creación de `NIVEL_RIESGO` (7 niveles)  
-- `TIPO_ORGANISMO` (8 categorías)  
-- `RANGO_EDAD` (3 rangos)
-
-### 5️⃣ Análisis Cruzado
-- PEPs en instituciones financieras  
-- Detección de 4 casos críticos  
-- Tablas cruzadas
-
-### 6️⃣ Comunicación y Exportación
-- Reporte ejecutivo  
-- Exportación de datasets derivados
+1.  **Setup y Carga de Datos**: El script `src/analisis_pep.py` carga el dataset desde el directorio `data/`.
+2.  **Limpieza y Verificación**: Se realizan comprobaciones de duplicados y valores nulos.
+3.  **Análisis y Transformación**: Se crean columnas adicionales (`NIVEL_RIESGO`, `TIPO_ORGANISMO`, `RANGO_EDAD`) para enriquecer el dataset.
+4.  **Análisis Cruzado**: Se identifican PEPs en instituciones financieras y se detectan casos críticos.
+5.  **Comunicación y Exportación**: Se generan reportes y archivos derivados en el directorio `data/`.
 
 ---
 
@@ -128,7 +92,7 @@ El proyecto sigue **Los 6 Pasos del Analista de Datos**:
 | Medio - Representación Local | 186 | 21.7% |
 | Otros | 87 | 10.2% |
 
-📌 **Alto riesgo: 344 (40.1%)**  
+📌 **Alto riesgo: 344 (40.1%)**
 📌 **Medio riesgo: 426 (49.7%)**
 
 ---
@@ -144,142 +108,84 @@ El proyecto sigue **Los 6 Pasos del Analista de Datos**:
 
 ---
 
-## Distribución por Tipo de Organismo
-
-- Poder Legislativo: 244 (28.5%)  
-- Ministerios: 172 (20.1%)  
-- Poder Judicial: 158 (18.4%)  
-- Otros Organismos: 98 (11.4%)  
-- Gobiernos Departamentales: 87 (10.2%)  
-- Instituciones Financieras: 52 (6.1%)  
-- Empresas Públicas: 35 (4.1%)  
-- Educación: 11 (1.3%)
-
----
-
-## Perfil Etario (Estimado)
-
-- **Menor de 35**: 185 (21.6%)  
-- **35–50**: 412 (48.1%)  
-- **Mayor de 50**: 260 (30.3%)  
-
----
-
 ## 📂 Estructura del Proyecto
 
 ```
 Analisis-PEP-Uruguay/
 │
-├── 📓 Analisis_PEP_Uruguay.ipynb
-├── 📄 lista-actualizada-de-pep.csv
-├── 📄 pep_alto_riesgo_finanzas.csv
-├── 📄 REGISTRO_48_PEPs_MEDIO_RIESGO_FINANZAS.csv
-├── 📄 REPORTE_EJECUTIVO_PEP.txt
-└── 📘 README.md
+├── data/
+│   ├── 2.lista-actualizada-de-pep.csv
+│   └── (otros archivos generados...)
+│
+├── src/
+│   └── analisis_pep.py
+│
+├── requirements.txt
+└── README.md
 ```
 
 ---
 
 ## 💻 Cómo Usar Este Proyecto
 
-### Opción 1: Google Colab
-1. Subir el notebook  
-2. Subir el dataset  
-3. Ejecutar todas las celdas  
+### Requisitos
 
-### Opción 2: Jupyter Local
+- Python 3.8 o superior
+- Git
 
-```bash
-git clone https://github.com/federicoramos67/Analisis-PEP-Uruguay.git
-cd Analisis-PEP-Uruguay
-python -m venv venv
-source venv/bin/activate
-pip install pandas numpy jupyter
-jupyter notebook Analisis_PEP_Uruguay.ipynb
-```
+### Pasos
+
+1.  **Clonar el repositorio:**
+    ```bash
+    git clone https://github.com/federicoramos67/Analisis-PEP-Uruguay.git
+    cd Analisis-PEP-Uruguay
+    ```
+
+2.  **Crear un entorno virtual e instalar dependencias:**
+    ```bash
+    python -m venv venv
+    source venv/bin/activate  # En Windows: venv\Scripts\activate
+    pip install -r requirements.txt
+    ```
+
+3.  **Ejecutar el análisis:**
+    ```bash
+    python src/analisis_pep.py
+    ```
 
 ---
 
 ## 📦 Resultados y Archivos Generados
 
-### 1️⃣ Dataset Enriquecido
-Columnas agregadas:
-- `NIVEL_RIESGO`
-- `TIPO_ORGANISMO`
-- `RANGO_EDAD`
+El script generará los siguientes archivos en el directorio `data/`:
 
-### 2️⃣ Casos Críticos
-4 PEPs de alta prioridad.
-
-### 3️⃣ Registro Medio Riesgo
-48 PEPs vinculados al sector financiero.
-
-### 4️⃣ Reporte Ejecutivo
-Formato texto listo para entregar.
+-   `pep_enriquecido.csv`: El dataset completo con las columnas de análisis agregadas (`NIVEL_RIESGO`, `TIPO_ORGANISMO`, `RANGO_EDAD`).
+-   `pep_alto_riesgo_finanzas.csv`: Una lista de los 4 PEPs de alta prioridad identificados.
+-   `pep_medio_riesgo_finanzas.csv`: Un registro de los 48 PEPs de riesgo medio vinculados al sector financiero.
 
 ---
 
 ## 💼 Aplicaciones Prácticas
 
-- Onboarding KYC  
-- Monitoreo continuo  
-- Auditorías internas  
-- Reporte a SENACLAFT  
-- Capacitación  
-
----
-
-## 🎓 Sobre el Autor
-
-**Federico Ramos**  
-*Analista de Datos Jr.*
-
-- Python, Pandas, SQL  
-- Análisis exploratorio  
-- Compliance & PLAFT  
-
-**Contacto:**  
-- LinkedIn  
-- GitHub  
-- Email  
+-   Onboarding KYC
+-   Monitoreo continuo
+-   Auditorías internas
+-   Reporte a SENACLAFT
+-   Capacitación
 
 ---
 
 ## 📈 Próximos Pasos
 
-- [ ] Dashboard interactivo  
-- [ ] API REST  
-- [ ] Visualizaciones  
-- [ ] Series temporales  
-- [ ] Modelos predictivos  
-- [ ] Integración KYC  
+-   [ ] Dashboard interactivo
+-   [ ] API REST
+-   [ ] Visualizaciones
+-   [ ] Series temporales
+-   [ ] Modelos predictivos
+-   [ ] Integración KYC
 
 ---
 
 ## 📄 Licencia
 
-Licencia **MIT**  
-Datos públicos oficiales de SENACLAFT  
-Uso educativo y analítico  
-
----
-
-## 🙏 Agradecimientos
-
-- SENACLAFT  
-- Fundación Telefónica / UCU  
-- Comunidad Python  
-
----
-
-## 📊 Estadísticas del Proyecto
-
-![Lines of Code](https://img.shields.io/badge/Lines%20of%20Code-~800-blue)
-![Commits](https://img.shields.io/badge/Commits-1-green)
-![Last Updated](https://img.shields.io/badge/Last%20Updated-Diciembre%202025-orange)
-
----
-
-**⭐ Si este proyecto te fue útil, considerá darle una estrella.**
-
-*Desarrollado con 💙 en Uruguay*
+Licencia **MIT**. Datos públicos oficiales de SENACLAFT. Uso educativo y analítico.
