@@ -229,6 +229,11 @@ El notebook y el script generan los siguientes archivos:
 **En `notebooks/`:**
 - 5 gráficos PNG con estilo oscuro profesional (150 DPI).
 
+> **Sobre el nivel de riesgo y los datos personales.** `NIVEL_RIESGO` clasifica el **cargo** según
+> criterios de debida diligencia (Ley 19.574); no es una evaluación de la conducta de ninguna persona.
+> Los archivos derivados no incluyen la cédula de identidad: solo se usa, dentro del análisis, para
+> estimar el rango etario.
+
 ---
 
 ## 💼 Aplicaciones Prácticas
