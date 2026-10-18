@@ -145,18 +145,19 @@ def analizar_pep():
         os.makedirs(DATA_OUTPUT_DIR)
 
     # Exportar dataset enriquecido
-    df.to_csv(os.path.join(DATA_OUTPUT_DIR, 'pep_enriquecido.csv'), index=False)
+    # Las salidas derivadas no incluyen la cédula: no hace falta para el análisis
+    df.drop(columns=['CI']).to_csv(os.path.join(DATA_OUTPUT_DIR, 'pep_enriquecido.csv'), index=False)
     print(f"✅ Dataset enriquecido guardado en '{DATA_OUTPUT_DIR}/pep_enriquecido.csv'")
 
     # Exportar casos críticos
-    criticos_export = criticos[['CI', 'NOMBRE', 'CARGO', 'ORGANISMO', 'NIVEL_RIESGO']]
+    criticos_export = criticos[['NOMBRE', 'CARGO', 'ORGANISMO', 'NIVEL_RIESGO']]
     criticos_export.to_csv(os.path.join(DATA_OUTPUT_DIR, 'pep_alto_riesgo_finanzas.csv'), index=False)
     print(f"✅ Casos críticos guardados en '{DATA_OUTPUT_DIR}/pep_alto_riesgo_finanzas.csv'")
 
     # Exportar otros PEPs en finanzas
     fin_todas = df[df['TIPO_ORGANISMO'] == 'Instituciones Financieras']
     fin_resto = fin_todas[~fin_todas['NIVEL_RIESGO'].str.contains('Alto')]
-    fin_resto_export = fin_resto[['CI', 'NOMBRE', 'CARGO', 'ORGANISMO', 'NIVEL_RIESGO', 'RANGO_EDAD']]
+    fin_resto_export = fin_resto[['NOMBRE', 'CARGO', 'ORGANISMO', 'NIVEL_RIESGO', 'RANGO_EDAD']]
     fin_resto_export.to_csv(os.path.join(DATA_OUTPUT_DIR, 'pep_medio_riesgo_finanzas.csv'), index=False)
     print(f"✅ PEPs de riesgo medio en finanzas guardados en '{DATA_OUTPUT_DIR}/pep_medio_riesgo_finanzas.csv'")
 
